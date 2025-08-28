@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<script defer src="script.js"></script>
 	</head>
-	<body>
+	<body class>
 		<header class="header">
 			<figure class="figure background">
 				<img loading="lazy" src="images/chris-czermak-7ybKmhDTcz0-unsplash-optimized.jpg" alt="A river and bridge in Rome during the golden hour." />
@@ -35,10 +35,10 @@
 			</h1>
 			<div class="header_wrap">
 				<div class="wrap">
-					<button class="menu_open menu_button" aria-label="Open Menu" type="button">
+					<button class="menu_open menu_button" aria-label="Open Menu" aria-controls="navMenu" aria-expanded="false" type="button">
 						<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 					</button>
-					<nav class="navigation">
+					<nav id="navMenu" class="navigation">
 						<button class="menu_close menu_button" aria-label="Close Menu" type="button">
 							<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" /></svg>
 						</button>
@@ -78,11 +78,11 @@
 						</svg>
 					</button>
 					<div class="filter_buttons">
-						<button class="active" data-category="all">All</button>
-						<button data-category="cake">Cake</button>
-						<button data-category="fruit">Fruit</button>
-						<button data-category="wine">Wine</button>
-						<button data-category="other">Other</button>
+						<button aria-pressed="true" class="active" data-category="all">All</button>
+						<button aria-pressed="false" data-category="cake">Cake</button>
+						<button aria-pressed="false" data-category="fruit">Fruit</button>
+						<button aria-pressed="false" data-category="wine">Wine</button>
+						<button aria-pressed="false" data-category="other">Other</button>
 					</div>
 					<div class="filter_showing">
 						Showing
@@ -101,7 +101,7 @@
 							<img loading="lazy" src="product-images/blueberry-cheesecake.jpg" alt="A piece of blueberry cheesecake" />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" class="button" type="button">Quick View</button>
+							<button class="button" class="button" type="button">View</button>
 							<button class="button" class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -123,7 +123,7 @@
 							<img loading="lazy" src="product-images/blueberry-pound-cake.jpg" alt="A piece of Blueberry pound cake." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -145,7 +145,7 @@
 							<img loading="lazy" src="product-images/carrot-cake.jpg" alt="A piece of carrot cake." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -167,7 +167,7 @@
 							<img loading="lazy" src="product-images/coffee-beans.jpg" alt="Coffee Beans" />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -189,7 +189,7 @@
 							<img loading="lazy" src="product-images/cup-of-joe.jpg" alt="A cup of coffee." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -211,7 +211,7 @@
 							<img loading="lazy" src="product-images/espresso.jpg" alt="A cup of Espresso." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -233,7 +233,7 @@
 							<img loading="lazy" src="product-images/eucalyptus.jpg" alt="A branch of eucalyptus." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -255,7 +255,7 @@
 							<img loading="lazy" src="product-images/fresh-lemons.jpg" alt="Fresh lemons in the sunshine." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -277,7 +277,7 @@
 							<img loading="lazy" src="product-images/fruit-charcuterie.jpg" alt="A fruit charcuterie board." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -299,7 +299,7 @@
 							<img loading="lazy" src="product-images/fruit-smoothie.jpg" alt="A fruit smoothie." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -321,7 +321,7 @@
 							<img loading="lazy" src="product-images/glass-of-riesling.jpg" alt="A glass of riesling wine." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -343,7 +343,7 @@
 							<img loading="lazy" src="product-images/honey-dipper-with-lemon.jpg" alt="A honey dipper with lemon." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -365,7 +365,7 @@
 							<img loading="lazy" src="product-images/honeycrisp-apple.jpg" alt="A Honeycrisp apple" />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -387,7 +387,7 @@
 							<img loading="lazy" src="product-images/parmesan-pomegranate.jpg" alt="Cutting board with parmesan and pomegranate." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -409,7 +409,7 @@
 							<img loading="lazy" src="product-images/raspberry-jam-cheesecake.jpg" alt="A piece of raspberry jam cheesecake." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -431,7 +431,7 @@
 							<img loading="lazy" src="product-images/raspberry-pistachio-cake.jpg" alt="A piece of raspberry pistachio cake." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -453,7 +453,7 @@
 							<img loading="lazy" src="product-images/rose-wine.jpg" alt="A glass of Rose wine." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -475,7 +475,7 @@
 							<img loading="lazy" src="product-images/savory-charcuterie-board.jpg" alt="A savory charcuterie board." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -497,7 +497,7 @@
 							<img loading="lazy" src="product-images/seasonal-fruit.jpg" alt="Seasonal fruit stand." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -519,7 +519,7 @@
 							<img loading="lazy" src="product-images/watermelon-wedge.jpg" alt="A piece of watermelon wedge." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -541,7 +541,7 @@
 							<img loading="lazy" src="product-images/yellow-tulips.jpg" alt="A bunch of yellow tulips." />
 						</figure>
 						<div class="product_buttons">
-							<button class="button" type="button">Quick View</button>
+							<button class="button" type="button">View</button>
 							<button class="button" type="button" aria-label="Add to Cart">
 								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 									<circle cx="176" cy="416" r="16" style="fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 32px" />
@@ -558,7 +558,17 @@
 					</div>
 				</article>
 			</div>
-			<button class="button" type="button">Load More Products</button>
+			<div class="show_load-more wrap">
+				<div class="filter_showing">
+					Showing
+					<span class="first_item">1</span>
+					&mdash;
+					<span class="last_item">9</span>
+					of
+					<span class="total_items">21</span>
+				</div>
+				<button class="button load_more" type="button">Load More Products</button>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="instagram_feed">
@@ -583,9 +593,12 @@
 				<figure class="figure">
 					<img loading="lazy" src="product-images/parmesan-pomegranate.jpg" alt="Sliced parmesan and pomegranate." />
 				</figure>
+				<figure class="figure">
+					<img loading="lazy" src="product-images/raspberry-pistachio-cake.jpg" alt="A piece of raspberry pistachio cake." />
+				</figure>
 			</div>
 			<div class="footer_wrap wrap">
-				<nav class="navigation">
+				<nav class="navigation_footer">
 					<ul class="footer_nav">
 						<li class="nav_item active"><a href="#">Blog</a></li>
 						<li class="nav_item"><a href="#">Shop</a></li>
@@ -609,7 +622,7 @@
 						</g>
 					</svg>
 				</div>
-				<nav class="navigation">
+				<nav class="navigation_footer">
 					<ul class="footer_nav social_nav">
 						<li class="nav_item">
 							<a href="#">
@@ -645,7 +658,7 @@
 			<p class="copyright">
 				&copy;
 				<span id="date"></span>
-				Copyright. Angela J Holden
+				Copyright • Angela J Holden
 			</p>
 		</footer>
 	</body>
