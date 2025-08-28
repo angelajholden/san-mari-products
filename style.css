@@ -13,6 +13,7 @@
 	--black: #222;
 	--lt-gray: #f8f8f8;
 	--gray: #eaeaea;
+	--dk-gray: #555;
 	--aqua: #19c5d1;
 	--blue: #20399d;
 }
@@ -276,6 +277,10 @@ input[type="search"] {
 	gap: 2rem;
 }
 
+.products + .button {
+	margin: 2rem auto 5rem;
+}
+
 .figure {
 	width: 100%;
 	height: auto;
@@ -286,4 +291,160 @@ input[type="search"] {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.product_img-wrap {
+	position: relative;
+}
+
+.product_buttons {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.product_buttons .button {
+	opacity: 0;
+	color: var(--black);
+	background: var(--white);
+}
+
+.product_buttons .button svg {
+	stroke: var(--black);
+}
+
+.product_img-wrap:hover .product_buttons .button,
+.product_img-wrap:hover .product_buttons .button svg,
+.product_buttons .button:focus,
+.product_buttons .button:hover,
+.product_buttons .button:active {
+	opacity: 1;
+}
+
+.product_price {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product_heading {
+	line-height: 1.25;
+}
+
+/* Footer */
+.footer {
+	background-color: var(--black);
+}
+
+/* Instagram Feed */
+.instagram_feed {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	background-color: var(--white);
+}
+
+.instagram_feed .figure {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+}
+
+.instagram_feed img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Footer wrap */
+.footer_nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.footer_wrap {
+	padding: 6rem 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--dk-gray);
+}
+
+.footer_wrap .navigation {
+	width: 30%;
+}
+
+.footer_logo svg {
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	fill: var(--white);
+}
+
+.footer_nav .nav_item a {
+	text-decoration-color: transparent;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 3px;
+	color: var(--white);
+	transition: text-decoration-color 300ms ease-in-out;
+}
+
+.footer_nav .nav_item.active a,
+.footer_nav .nav_item a:focus,
+.footer_nav .nav_item a:hover,
+.footer_nav .nav_item a:active {
+	text-decoration-color: var(--white);
+}
+
+.footer_nav.social_nav a {
+	display: block;
+	padding: 1rem;
+	background-color: transparent;
+	border-radius: 5px;
+	transition: background-color 300ms ease-in-out;
+}
+
+.footer_nav.social_nav a svg {
+	width: 1.25rem;
+	height: 1.25rem;
+	stroke: var(--white);
+	fill: var(--white);
+	transition: all 300ms ease-in-out;
+}
+
+.footer_nav.social_nav a:focus,
+.footer_nav.social_nav a:hover,
+.footer_nav.social_nav a:active {
+	background-color: var(--white);
+}
+
+.footer_nav.social_nav a:focus svg,
+.footer_nav.social_nav a:hover svg,
+.footer_nav.social_nav a:active svg {
+	fill: var(--black);
+	stroke: var(--black);
+}
+
+.copyright {
+	width: 100%;
+	padding: 3rem 0;
+	margin: 0;
+	color: var(--white);
+	text-align: center;
 }
