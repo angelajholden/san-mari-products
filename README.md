@@ -6,7 +6,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Watch the Build](https://img.shields.io/badge/YouTube-Watch-blue?logo=youtube)](https://www.youtube.com/playlist?list=[playlist_goes_here])
 
-This is a simple, clean product grid with category filtering, built with HTML, CSS, and vanilla JavaScript. It’s based on a Photoshop mockup called **[San Mari - Blog PSD Template]** — purchased from [Envato/ThemeForest](https://themeforest.net/item/san-mari-blog-psd-template/23681597). The goal of this project is to turn a static design into accessible, modern code — and make it easy for anyone to customize or learn from.
+This is a simple, clean product grid with category filtering, built with HTML, CSS, and vanilla JavaScript. It’s based on a Photoshop mockup called **San Mari - Blog PSD Template** — purchased from [Envato/ThemeForest](https://themeforest.net/item/san-mari-blog-psd-template/23681597). The goal of this project is to turn a static design into accessible, modern code — and make it easy for anyone to customize or learn from.
 
 _This project is free and open-source, and focused on helping new frontend developers practice HTML, CSS and JavaScript with real-world examples._
 
