@@ -4,7 +4,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=flat&logo=javascript&logoColor=black)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![Watch the Build](https://img.shields.io/badge/YouTube-Watch-blue?logo=youtube)](https://www.youtube.com/playlist?list=[playlist_goes_here])
+[![Watch the Build](https://img.shields.io/badge/YouTube-Watch-blue?logo=youtube)](https://youtu.be/aQsARcmmX4g)
 
 This is a simple, clean product grid with category filtering, built with HTML, CSS, and vanilla JavaScript. It’s based on a Photoshop mockup called **San Mari - Blog PSD Template** — purchased from [Envato/ThemeForest](https://themeforest.net/item/san-mari-blog-psd-template/23681597). The goal of this project is to turn a static design into accessible, modern code — and make it easy for anyone to customize or learn from.
 
